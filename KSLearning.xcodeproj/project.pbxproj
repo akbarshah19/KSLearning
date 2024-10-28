@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		AD3EC6F72C37ADFC00E2AAF7 /* KSLearningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3EC6F62C37ADFC00E2AAF7 /* KSLearningApp.swift */; };
-		AD3EC6F92C37ADFC00E2AAF7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3EC6F82C37ADFC00E2AAF7 /* ContentView.swift */; };
 		AD3EC6FB2C37ADFE00E2AAF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD3EC6FA2C37ADFE00E2AAF7 /* Assets.xcassets */; };
 		AD3EC6FE2C37ADFE00E2AAF7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD3EC6FD2C37ADFE00E2AAF7 /* Preview Assets.xcassets */; };
 		AD3EC7222C37AF2300E2AAF7 /* BubbleTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3EC7212C37AF2300E2AAF7 /* BubbleTabBar.swift */; };
@@ -34,7 +33,6 @@
 /* Begin PBXFileReference section */
 		AD3EC6F32C37ADFC00E2AAF7 /* KSLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KSLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD3EC6F62C37ADFC00E2AAF7 /* KSLearningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KSLearningApp.swift; sourceTree = "<group>"; };
-		AD3EC6F82C37ADFC00E2AAF7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AD3EC6FA2C37ADFE00E2AAF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD3EC6FD2C37ADFE00E2AAF7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AD3EC7032C37ADFE00E2AAF7 /* KSLearningTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KSLearningTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,7 +88,6 @@
 			children = (
 				AD3EC7202C37AEFE00E2AAF7 /* BubbleTabBar */,
 				AD3EC6F62C37ADFC00E2AAF7 /* KSLearningApp.swift */,
-				AD3EC6F82C37ADFC00E2AAF7 /* ContentView.swift */,
 				AD3EC6FA2C37ADFE00E2AAF7 /* Assets.xcassets */,
 				AD3EC6FC2C37ADFE00E2AAF7 /* Preview Content */,
 			);
@@ -244,7 +241,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD3EC7222C37AF2300E2AAF7 /* BubbleTabBar.swift in Sources */,
-				AD3EC6F92C37ADFC00E2AAF7 /* ContentView.swift in Sources */,
 				AD3EC6F72C37ADFC00E2AAF7 /* KSLearningApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -11,7 +11,7 @@ import SwiftUI
 struct KSLearningApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            BubbleTabBar()
         }
     }
 }

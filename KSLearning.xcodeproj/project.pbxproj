@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD08352B2CCF7DF4001234C5 /* UniversalOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD08352A2CCF7DF4001234C5 /* UniversalOverlay.swift */; };
+		AD08352F2CCF7EED001234C5 /* UniversalOverlayHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD08352E2CCF7EED001234C5 /* UniversalOverlayHelpers.swift */; };
 		AD3EC6F72C37ADFC00E2AAF7 /* KSLearningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3EC6F62C37ADFC00E2AAF7 /* KSLearningApp.swift */; };
 		AD3EC6FB2C37ADFE00E2AAF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD3EC6FA2C37ADFE00E2AAF7 /* Assets.xcassets */; };
 		AD3EC6FE2C37ADFE00E2AAF7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD3EC6FD2C37ADFE00E2AAF7 /* Preview Assets.xcassets */; };
@@ -31,6 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD08352A2CCF7DF4001234C5 /* UniversalOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalOverlay.swift; sourceTree = "<group>"; };
+		AD08352E2CCF7EED001234C5 /* UniversalOverlayHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalOverlayHelpers.swift; sourceTree = "<group>"; };
 		AD3EC6F32C37ADFC00E2AAF7 /* KSLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KSLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD3EC6F62C37ADFC00E2AAF7 /* KSLearningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KSLearningApp.swift; sourceTree = "<group>"; };
 		AD3EC6FA2C37ADFE00E2AAF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -65,6 +69,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD08352C2CCF7EA9001234C5 /* UniversalOverlay */ = {
+			isa = PBXGroup;
+			children = (
+				AD08352A2CCF7DF4001234C5 /* UniversalOverlay.swift */,
+				AD08352E2CCF7EED001234C5 /* UniversalOverlayHelpers.swift */,
+			);
+			path = UniversalOverlay;
+			sourceTree = "<group>";
+		};
 		AD3EC6EA2C37ADFC00E2AAF7 = {
 			isa = PBXGroup;
 			children = (
@@ -86,8 +99,9 @@
 		AD3EC6F52C37ADFC00E2AAF7 /* KSLearning */ = {
 			isa = PBXGroup;
 			children = (
-				AD3EC7202C37AEFE00E2AAF7 /* BubbleTabBar */,
 				AD3EC6F62C37ADFC00E2AAF7 /* KSLearningApp.swift */,
+				AD3EC7212C37AF2300E2AAF7 /* BubbleTabBar.swift */,
+				AD08352C2CCF7EA9001234C5 /* UniversalOverlay */,
 				AD3EC6FA2C37ADFE00E2AAF7 /* Assets.xcassets */,
 				AD3EC6FC2C37ADFE00E2AAF7 /* Preview Content */,
 			);
@@ -100,14 +114,6 @@
 				AD3EC6FD2C37ADFE00E2AAF7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		AD3EC7202C37AEFE00E2AAF7 /* BubbleTabBar */ = {
-			isa = PBXGroup;
-			children = (
-				AD3EC7212C37AF2300E2AAF7 /* BubbleTabBar.swift */,
-			);
-			path = BubbleTabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +247,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD3EC7222C37AF2300E2AAF7 /* BubbleTabBar.swift in Sources */,
+				AD08352B2CCF7DF4001234C5 /* UniversalOverlay.swift in Sources */,
+				AD08352F2CCF7EED001234C5 /* UniversalOverlayHelpers.swift in Sources */,
 				AD3EC6F72C37ADFC00E2AAF7 /* KSLearningApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

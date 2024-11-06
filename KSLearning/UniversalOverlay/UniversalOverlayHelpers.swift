@@ -136,8 +136,8 @@ fileprivate class PassThroughWindow: UIWindow {
     }
 }
 
-#Preview(body: {
+#Preview {
     RootView {
         UniversalOverlay()
     }
-})
+}

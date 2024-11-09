@@ -15,7 +15,9 @@ extension View {
         @ViewBuilder content: @escaping () -> Content
     ) -> some View {
         self
-            .modifier(UniversalOverlayModifier(animation: animation, show: show, viewContent: content))
+            .modifier(UniversalOverlayModifier(animation: animation,
+                                               show: show,
+                                               viewContent: content))
     }
 }
 

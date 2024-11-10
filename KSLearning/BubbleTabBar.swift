@@ -13,7 +13,7 @@ struct BubbleTabBar: View {
     @State private var selectedTab = "house"
     
     init() {
-        UITabBar.appearance().isHidden = true
+        UITabBar.appearance().isHidden = true //to hide tab bar
     }
     
     @State var xAxis: CGFloat = 0

@@ -40,7 +40,6 @@ struct BubbleTabBar: View {
             }
             
             //Custom Tab Bar
-            
             HStack(spacing: 0) {
                 ForEach(tabs, id: \.self) { image in
                     GeometryReader { reader  in
@@ -112,6 +111,12 @@ struct BubbleTabBarCustomShape: Shape {
             path.addCurve(to: to1, control1: control1, control2: control2)
             path.addCurve(to: to2, control1: control3, control2: control4)
         }
+    }
+}
+
+extension String {
+    var isNilOrEmpty: Bool {
+        return self.isEmpty || self == ""
     }
 }
 

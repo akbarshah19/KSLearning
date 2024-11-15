@@ -41,7 +41,7 @@ struct FloatingVideoPlayerView: View {
     
     @State private var player: AVPlayer?
     @State private var offset: CGSize = .zero
-    @State private var lastStredOffset: CGSize = .zero
+    @State private var lastStoredOffset: CGSize = .zero
     
     var body: some View {
         GeometryReader {
@@ -62,12 +62,29 @@ struct FloatingVideoPlayerView: View {
                 DragGesture()
                     .onChanged { value in
                         let translation = value.translation
+                        withAnimation(.smooth) {
+                            offset = translation + lastStoredOffset
+                        }
                     }
                     .onEnded { value in
                         let translation = value.translation
                         
+                        withAnimation(.bouncy) {
+                            offset.width = 0
+                            
+                            if offset.height < 0 {
+                                offset.height = 0
+                            }
+                            
+                            if offset.height > (size.height - 250) {
+                                offset.height = (size.height - 250)
+                            }
+                            
+                            lastStoredOffset = offset
+                        }
                     }
             )
+            .frame(maxHeight: .infinity, alignment: .top)
         }
         .padding(.horizontal)
         .transition(.blurReplace)
@@ -89,7 +106,9 @@ struct FloatingVideoPlayerView: View {
 }
 
 extension CGSize {
-    
+    static func +(lhs: CGSize, rhs: CGSize) -> CGSize {
+        return .init(width: lhs.width + rhs.width, height: lhs.height + rhs.height)
+    }
 }
 
 #Preview {

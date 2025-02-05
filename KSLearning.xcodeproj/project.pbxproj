@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,7 +12,6 @@
 		AD3EC6F72C37ADFC00E2AAF7 /* KSLearningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3EC6F62C37ADFC00E2AAF7 /* KSLearningApp.swift */; };
 		AD3EC6FB2C37ADFE00E2AAF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD3EC6FA2C37ADFE00E2AAF7 /* Assets.xcassets */; };
 		AD3EC6FE2C37ADFE00E2AAF7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD3EC6FD2C37ADFE00E2AAF7 /* Preview Assets.xcassets */; };
-		AD3EC7222C37AF2300E2AAF7 /* BubbleTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3EC7212C37AF2300E2AAF7 /* BubbleTabBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +40,12 @@
 		AD3EC6FD2C37ADFE00E2AAF7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AD3EC7032C37ADFE00E2AAF7 /* KSLearningTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KSLearningTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD3EC70D2C37ADFE00E2AAF7 /* KSLearningUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KSLearningUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD3EC7212C37AF2300E2AAF7 /* BubbleTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleTabBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		ADC7F06C2D53E86C0015AE45 /* BubbleTabBar */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = BubbleTabBar; sourceTree = "<group>"; };
+		ADC7F06D2D53E87D0015AE45 /* MultipleImageViewer */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = MultipleImageViewer; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		AD3EC6F02C37ADFC00E2AAF7 /* Frameworks */ = {
@@ -99,8 +102,9 @@
 		AD3EC6F52C37ADFC00E2AAF7 /* KSLearning */ = {
 			isa = PBXGroup;
 			children = (
+				ADC7F06D2D53E87D0015AE45 /* MultipleImageViewer */,
 				AD3EC6F62C37ADFC00E2AAF7 /* KSLearningApp.swift */,
-				AD3EC7212C37AF2300E2AAF7 /* BubbleTabBar.swift */,
+				ADC7F06C2D53E86C0015AE45 /* BubbleTabBar */,
 				AD08352C2CCF7EA9001234C5 /* UniversalOverlay */,
 				AD3EC6FA2C37ADFE00E2AAF7 /* Assets.xcassets */,
 				AD3EC6FC2C37ADFE00E2AAF7 /* Preview Content */,
@@ -130,6 +134,10 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				ADC7F06C2D53E86C0015AE45 /* BubbleTabBar */,
+				ADC7F06D2D53E87D0015AE45 /* MultipleImageViewer */,
 			);
 			name = KSLearning;
 			productName = KSLearning;
@@ -246,7 +254,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD3EC7222C37AF2300E2AAF7 /* BubbleTabBar.swift in Sources */,
 				AD08352B2CCF7DF4001234C5 /* UniversalOverlay.swift in Sources */,
 				AD08352F2CCF7EED001234C5 /* UniversalOverlayHelpers.swift in Sources */,
 				AD3EC6F72C37ADFC00E2AAF7 /* KSLearningApp.swift in Sources */,
